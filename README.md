@@ -1,6 +1,6 @@
 # Nikiclicki
 
-<video src='assets/demo.mp4' width=720/>
+https://github.com/user-attachments/assets/da49d106-9a76-4c70-872b-8fa687b6c82f
 
 An app for rolling promo-codes on nikifilini website
 
