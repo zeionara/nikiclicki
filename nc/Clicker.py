@@ -52,7 +52,7 @@ class Clicker:
             try:
                 return self.driver.find_element(by = By.CLASS_NAME, value = 'roulette-content')
             except NoSuchElementException:
-                pass
+                print('no roulette content')
 
     def get_farmed_item(self, roulette_content):
         while True:
@@ -96,7 +96,8 @@ class Clicker:
 
             roulette_content = self.get_roulette_content()
 
-            submit = roulette_content.find_element(by = By.TAG_NAME, value = 'button')
+            spin = roulette_content.find_element(by = By.CLASS_NAME, value = 'spin')
+            submit = spin.find_element(by = By.TAG_NAME, value = 'button')
 
             submit.click()
 
